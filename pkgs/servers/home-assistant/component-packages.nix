@@ -2,7 +2,7 @@
 # Do not edit!
 
 {
-  version = "2024.3.3";
+  version = "2024.4.0";
   components = {
     "3_day_blinds" = ps: with ps; [
     ];
@@ -283,7 +283,6 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "aseko_pool_live" = ps: with ps; [
@@ -362,7 +361,6 @@
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
       axis
-      janus
       paho-mqtt
     ];
     "azure_devops" = ps: with ps; [
@@ -856,7 +854,6 @@
       home-assistant-frontend
       home-assistant-intents
       ifaddr
-      janus
       mutagen
       numpy
       pillow
@@ -1056,7 +1053,6 @@
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
       dropmqttapi
-      janus
       paho-mqtt
     ];
     "dsmr" = ps: with ps; [
@@ -1066,7 +1062,6 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "dte_energy_bridge" = ps: with ps; [
@@ -1096,7 +1091,6 @@
       dynalite-panel
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -1183,6 +1177,9 @@
       pypca
     ];
     "elvia" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -1386,11 +1383,13 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
     ];
     "filesize" = ps: with ps; [
     ];
     "filter" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -1560,7 +1559,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -1574,12 +1572,14 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
       python-fullykiosk
     ];
     "futurenow" = ps: with ps; [
       pyfnip
+    ];
+    "fyta" = ps: with ps; [
+      fyta-cli
     ];
     "garadget" = ps: with ps; [
     ];
@@ -1633,6 +1633,9 @@
     "generic_hygrostat" = ps: with ps; [
     ];
     "generic_thermostat" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -1917,6 +1920,9 @@
       sqlalchemy
     ];
     "history_stats" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -1956,7 +1962,6 @@
       aiohttp-zlib-ng
       bellows
       fnv-hash-fast
-      janus
       pillow
       psutil-home-assistant
       pyserial
@@ -1978,7 +1983,6 @@
       aiohttp-zlib-ng
       bellows
       fnv-hash-fast
-      janus
       pillow
       psutil-home-assistant
       pyserial
@@ -2000,7 +2004,6 @@
       aiohttp-zlib-ng
       bellows
       fnv-hash-fast
-      janus
       pillow
       psutil-home-assistant
       pyserial
@@ -2022,7 +2025,6 @@
       aiohttp-zlib-ng
       bellows
       fnv-hash-fast
-      janus
       pillow
       psutil-home-assistant
       pyserial
@@ -2355,7 +2357,6 @@
       fnv-hash-fast
       home-assistant-frontend
       insteon-frontend-home-assistant
-      janus
       pillow
       psutil-home-assistant
       pyinsteon
@@ -2526,6 +2527,9 @@
       pykira
     ];
     "kitchen_sink" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -2542,7 +2546,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       knx-frontend
       pillow
       psutil-home-assistant
@@ -2583,7 +2586,34 @@
     "lacrosse_view" = ps: with ps; [
     ]; # missing inputs: lacrosse-view
     "lamarzocco" = ps: with ps; [
+      aioesphomeapi
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
+      aioruuvigateway
+      aioshelly
+      bleak
+      bleak-esphome
+      bleak-retry-connector
+      bluetooth-adapters
+      bluetooth-auto-recovery
+      bluetooth-data-tools
+      dbus-fast
+      esphome-dashboard-api
+      fnv-hash-fast
+      ha-ffmpeg
+      habluetooth
+      hassil
+      home-assistant-intents
+      ifaddr
       lmcloud
+      mutagen
+      psutil-home-assistant
+      pyserial
+      pyudev
+      sqlalchemy
+      webrtc-noise-gain
+      zeroconf
     ];
     "lametric" = ps: with ps; [
       aiohttp-cors
@@ -2798,7 +2828,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -2839,6 +2868,10 @@
       webrtc-noise-gain
     ];
     "lovelace" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
+      pillow
     ];
     "luci" = ps: with ps; [
       openwrt-luci-rpc
@@ -2887,7 +2920,6 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "map" = ps: with ps; [
@@ -2896,7 +2928,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -3205,6 +3236,35 @@
       psutil-home-assistant
       sqlalchemy
     ];
+    "motionblinds_ble" = ps: with ps; [
+      aioesphomeapi
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
+      aioruuvigateway
+      aioshelly
+      bleak
+      bleak-esphome
+      bleak-retry-connector
+      bluetooth-adapters
+      bluetooth-auto-recovery
+      bluetooth-data-tools
+      dbus-fast
+      esphome-dashboard-api
+      fnv-hash-fast
+      ha-ffmpeg
+      habluetooth
+      hassil
+      home-assistant-intents
+      ifaddr
+      mutagen
+      psutil-home-assistant
+      pyserial
+      pyudev
+      sqlalchemy
+      webrtc-noise-gain
+      zeroconf
+    ]; # missing inputs: motionblindsble
     "motioneye" = ps: with ps; [
       aiohttp-cors
       aiohttp-fast-url-dispatcher
@@ -3220,35 +3280,30 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "mqtt_eventstream" = ps: with ps; [
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "mqtt_json" = ps: with ps; [
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "mqtt_room" = ps: with ps; [
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "mqtt_statestream" = ps: with ps; [
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "msteams" = ps: with ps; [
@@ -3269,7 +3324,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -3280,7 +3334,6 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
       pymysensors
     ];
@@ -3467,7 +3520,7 @@
     "number" = ps: with ps; [
     ];
     "nut" = ps: with ps; [
-      pynut2
+      aionut
     ];
     "nutrichef" = ps: with ps; [
     ];
@@ -3494,6 +3547,13 @@
     "ohmconnect" = ps: with ps; [
       defusedxml
     ];
+    "ollama" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
+      hassil
+      home-assistant-intents
+    ]; # missing inputs: ollama-hass
     "ombi" = ps: with ps; [
       pyombi
     ];
@@ -3504,10 +3564,7 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      fnv-hash-fast
       pillow
-      psutil-home-assistant
-      sqlalchemy
     ];
     "oncue" = ps: with ps; [
       aiooncue
@@ -3542,9 +3599,6 @@
     ];
     "openalpr_cloud" = ps: with ps; [
     ];
-    "opencv" = ps: with ps; [
-      numpy
-    ]; # missing inputs: opencv-python-headless
     "openerz" = ps: with ps; [
       openerz-api
     ];
@@ -3581,6 +3635,9 @@
       pyopnsense
     ];
     "opower" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       opower
       psutil-home-assistant
@@ -3636,7 +3693,6 @@
       bellows
       fnv-hash-fast
       ifaddr
-      janus
       pillow
       psutil-home-assistant
       pyroute2
@@ -3675,7 +3731,6 @@
       hass-nabucasa
       hassil
       home-assistant-intents
-      janus
       mutagen
       paho-mqtt
       psutil-home-assistant
@@ -3703,7 +3758,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -3714,7 +3768,6 @@
       aiohttp-zlib-ng
       fnv-hash-fast
       home-assistant-frontend
-      janus
       pillow
       psutil-home-assistant
       sqlalchemy
@@ -3786,6 +3839,9 @@
       webrtc-noise-gain
     ];
     "plant" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -4085,6 +4141,9 @@
       aiorecollect
     ];
     "recorder" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -4099,7 +4158,6 @@
       hassil
       home-assistant-frontend
       home-assistant-intents
-      janus
       mutagen
       pillow
       psutil-home-assistant
@@ -4389,6 +4447,9 @@
       zeroconf
     ];
     "sensor" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -4502,6 +4563,7 @@
       dbus-fast
       fnv-hash-fast
       habluetooth
+      ifaddr
       psutil-home-assistant
       pyserial
       pyudev
@@ -4618,6 +4680,8 @@
     ];
     "smtp" = ps: with ps; [
     ];
+    "smud" = ps: with ps; [
+    ];
     "snapcast" = ps: with ps; [
       snapcast
     ];
@@ -4625,7 +4689,6 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      janus
       paho-mqtt
     ];
     "snmp" = ps: with ps; [
@@ -4766,6 +4829,9 @@
       xmltodict
     ];
     "statistics" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       sqlalchemy
@@ -4953,7 +5019,6 @@
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
       hatasmota
-      janus
       paho-mqtt
     ];
     "tautulli" = ps: with ps; [
@@ -4977,16 +5042,14 @@
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      pysocks
       python-telegram-bot
-    ];
+    ]; # missing inputs: python-telegram-bot.optional-dependencies.socks
     "telegram_bot" = ps: with ps; [
       aiohttp-cors
       aiohttp-fast-url-dispatcher
       aiohttp-zlib-ng
-      pysocks
       python-telegram-bot
-    ];
+    ]; # missing inputs: python-telegram-bot.optional-dependencies.socks
     "tellduslive" = ps: with ps; [
       tellduslive
     ];
@@ -5105,6 +5168,9 @@
     "threshold" = ps: with ps; [
     ];
     "tibber" = ps: with ps; [
+      aiohttp-cors
+      aiohttp-fast-url-dispatcher
+      aiohttp-zlib-ng
       fnv-hash-fast
       psutil-home-assistant
       pytibber
@@ -5804,7 +5870,6 @@
       aiohttp-zlib-ng
       bellows
       fnv-hash-fast
-      janus
       pillow
       psutil-home-assistant
       pyserial
@@ -5999,6 +6064,7 @@
     "dnsip"
     "doorbird"
     "dormakaba_dkey"
+    "downloader"
     "dremel_3d_printer"
     "drop_connect"
     "dsmr"
@@ -6079,6 +6145,7 @@
     "frontend"
     "frontier_silicon"
     "fully_kiosk"
+    "fyta"
     "garages_amsterdam"
     "gardena_bluetooth"
     "gdacs"
@@ -6147,6 +6214,7 @@
     "homematic"
     "homematicip_cloud"
     "homewizard"
+    "homeworks"
     "honeywell"
     "html5"
     "http"
@@ -6248,6 +6316,7 @@
     "mailgun"
     "manual"
     "manual_mqtt"
+    "map"
     "matrix"
     "matter"
     "maxcube"
@@ -6428,6 +6497,7 @@
     "romy"
     "roomba"
     "roon"
+    "rova"
     "rpi_power"
     "rss_feed_template"
     "rtsp_to_webrtc"
@@ -6539,8 +6609,6 @@
     "tcp"
     "technove"
     "tedee"
-    "telegram"
-    "telegram_bot"
     "tellduslive"
     "temper"
     "template"
